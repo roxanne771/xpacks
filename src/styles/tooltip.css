@@ -1,0 +1,77 @@
+/* Tooltip Button */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: #FF5722;
+    font-weight: bold;
+    font-size: 16px;
+    background: linear-gradient(145deg, #203A43, #2C5364);
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.tooltip:focus,
+.tooltip:active {
+    outline: none;
+    background: linear-gradient(145deg, #2C5364, #203A43);
+    transform: scale(1.05);
+}
+
+/* Tooltip Content */
+.tooltip .tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    background: linear-gradient(145deg, #2C5364, #203A43);
+    color: #EAEAEA;
+    text-align: center;
+    padding: 15px;
+    border-radius: 12px;
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: visibility 0.3s, opacity 0.3s, transform 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    white-space: pre-wrap;
+    min-width: 250px;
+    font-size: 14px;
+}
+
+.tooltip .tooltip-text span {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.tooltip .tooltip-text .author {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #FFD700;
+}
+
+.tooltip .tooltip-text .close-btn {
+    margin-top: 10px;
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.tooltip .tooltip-text .close-btn:hover {
+    background-color: #E64A19;
+}
+
+/* Tooltip Active */
+.tooltip-active .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -10px);
+}

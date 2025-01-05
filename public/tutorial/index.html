@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial</title>
+    <link rel="stylesheet" href="./tutorial.css">
+</head>
+
+<body>
+    <main class="tutorial-container">
+        <header>
+            <h1 class="tutorial-title">Tutorial</h1>
+        </header>
+        <section class="info-section">
+            <article>
+                <div class="separator">
+                    <span>💎 </span><strong>Why Choose Our Packs?</strong>
+                </div>
+                <p>
+                    ✨ All packs include high-quality HD photos and videos.<br />
+                    ✨ Access to an <strong>exclusive group</strong> via a private link (included in the pack).<br />
+                    ✨ Lifetime access with a one-time payment — no hidden fees.
+                </p>
+            </article>
+            <article>
+                <h3>💰 <strong>Payment Options Made Simple</strong></h3>
+                <p>
+                    Choose a pack and complete the payment via <strong>PayPal</strong> or <strong>credit card</strong>,
+                    and
+                    receive your private <strong>Mega link</strong> for instant access.
+                </p>
+                <p>Watch the tutorial:</p>
+                <video class="tutorial-video" controls autoplay muted loop>
+                    <source src="./tutorial.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <button class="back-button" onclick="goBack()">Back to menu</button>
+            </article>
+            <article>
+                <p>Need assistance? Telegram me.</p>
+                <a href="https://t.me/wolowitz_admin04" target="_blank" class="telegram-link"
+                    aria-label="Telegram profile">
+                    <div class="telegram-icon" aria-hidden="true"></div>
+                    <span>@wolowitz_admin04</span>
+                </a>
+            </article>
+            <article>
+                <h3 class="serious">⚠️ <strong>Serious Buyers Only!</strong></h3>
+                <p>Please don’t contact us unless you’re ready to purchase. 💳</p>
+            </article>
+            <article>
+                <h4>🚀 Don’t wait! Unlock an exclusive pack now and enjoy premium content instantly! 😍</h4>
+            </article>
+        </section>
+    </main>
+    <script>
+        function goBack() {
+            if (document.referrer) {
+                window.history.back();
+            } else {
+                window.location.href = '/';
+            }
+        }
+    </script>
+</body>
+
+</html>

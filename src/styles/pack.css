@@ -1,0 +1,124 @@
+/* Pack */
+.pack-list {
+    background-color: #0F3460;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.no-packs {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff6f61;
+  margin-top: 100px;
+  padding: 100px 0;
+  margin-bottom: 100px;
+}
+
+.pack-item {
+    padding: 20px;
+    border-radius: 12px;
+    place-content: center;
+    text-align: center;
+    border: 1px solid #162447;
+    background: linear-gradient(145deg, #1F4068, #1A1A2E);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease;
+}
+
+.pack-item:hover {
+    box-shadow: none;
+}
+
+.media-container {
+    max-width: 500px;
+    height: auto;
+    min-height: 150px;
+    margin: 0 auto 15px;
+    position: relative;
+    overflow: hidden;
+    background-color: #1A1A2E;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.media-container img,
+.media-container video {
+    object-fit: contain;
+    max-height: 360px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.media-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    transform: translateY(-50%);
+}
+
+.media-controls button {
+    background-color: #1A1A2E;
+    color: #00ADB5;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.media-controls button:hover {
+    background-color: #162447;
+    transform: scale(1.1);
+}
+
+.pack-item h2 {
+    padding-bottom: 12px;
+    font-size: 1.2em;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #00FF88;
+    margin: 15px 0;
+    padding: 2px 0 10px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.price s {
+    color: #FF6F61;
+    font-weight: normal;
+}
+
+.price strong {
+    color: #00FF88;
+}
+
+.get-now-btn {
+    background: linear-gradient(145deg, #FF5722, #E64A19);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.get-now-btn:hover {
+    background: linear-gradient(145deg, #E64A19, #D84315);
+    transform: scale(1.05);
+}
